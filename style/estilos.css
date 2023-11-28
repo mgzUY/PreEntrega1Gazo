@@ -1,12 +1,33 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Sora:wght@300;600&display=swap');
-
-
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Sora:wght@300;600&display=swap";
 /* Navbar- */
-
+/* PARTICULAS */
+/* ---- reset ---- */
+/* ---- particles.js container ---- */
+/* ---- stats.js ---- */
+/* Carrusel */
+/* Estilos de los ítems del carrusel */
+/* Animación del carrusel */
+@keyframes carousel-animation {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* CELDAS CON PRODUCTOS */
+/* FOOTER */
+/* CONTACTO */
 #logo {
-  width: 100px; 
-  height: 50px; 
+  width: 100px;
+  height: 50px;
   color: indianred;
 }
 
@@ -16,33 +37,33 @@
 
 .navbar-brand {
   color: #000022;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: blueviolet;
   font-size: 20px;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 .form-inline .btn {
   color: blueviolet;
   border-color: blueviolet;
 }
-
 .form-inline .btn:hover {
   background-color: blueviolet;
 }
 
-/* PARTICULAS */
-/* ---- reset ---- */
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
+
 canvas {
   display: block;
-} /* ---- particles.js container ---- */
+}
+
 #particles-js {
   position: fixed;
   width: 100%;
@@ -53,7 +74,8 @@ canvas {
   background-size: cover;
   background-position: 50% 50%;
   z-index: -1;
-} /* ---- stats.js ---- */
+}
+
 .count-particles {
   background: #000022;
   position: absolute;
@@ -68,23 +90,22 @@ canvas {
   padding-bottom: 2px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 0 0 3px 3px;
 }
+
 .js-count-particles {
   font-size: 1.1em;
 }
-#stats,
-.count-particles {
+
+#stats {
   margin-top: 5px;
   margin-left: 5px;
-}
-#stats {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
 }
-.count-particles {
-  border-radius: 0 0 3px 3px;
-}
-/* Carrusel */
+
 .carousel {
   position: relative;
   width: auto;
@@ -114,7 +135,6 @@ canvas {
   transition: color 0.3s;
   font-weight: bold;
 }
-
 .estilo-customizado:hover {
   color: rgb(247, 179, 245);
   border: 2px solid rgb(247, 179, 245);
@@ -125,7 +145,6 @@ canvas {
   display: none;
 }
 
-/* Estilos de los ítems del carrusel */
 .slide1 {
   background-color: #ffffff;
 }
@@ -138,26 +157,6 @@ canvas {
   background-color: #ffffff;
 }
 
-/* Animación del carrusel */
-@keyframes carousel-animation {
-  0% {
-    transform: translateX(0);
-  }
-
-  30% {
-    transform: translateX(-100%);
-  }
-
-  60% {
-    transform: translateX(-200%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* CELDAS CON PRODUCTOS */
 .card {
   transition: transform 0.2s;
   margin-bottom: 40px;
@@ -167,22 +166,14 @@ canvas {
   box-shadow: 0 15px 30px 0 rgb(247, 179, 245), 0 5px 15px 0 rgb(255, 119, 0);
 }
 
-/* FOOTER */
-
 .footer a {
   text-decoration: none;
   font-weight: bold;
   color: white;
 }
-
 .footer a:hover {
   color: rgb(247, 179, 245);
   text-decoration: none;
-}
-
-/* CONTACTO */
-body {
-  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -191,12 +182,11 @@ body {
 }
 
 .btn-lineup {
-  background-color: #F57C00;
+  background-color: #f57c00;
   color: white;
 }
-
 .btn-lineup:hover {
-  background-color: #C75E00;
+  background-color: #c75e00;
   color: white;
 }
 
@@ -210,15 +200,14 @@ body {
 
 @media (max-width: 770px) {
   #myCarousel .carousel-item.active img {
-      content: url('../img/carrousel1-low.jpg');
+    content: url("../img/carrousel1-low.jpg");
   }
   #myCarousel .carousel-item:nth-child(2) img {
-      content: url('../img/carrousel2-low.png');
+    content: url("../img/carrousel2-low.png");
   }
   #myCarousel .carousel-item:nth-child(3) img {
-      content: url('../img/carrousel3-low.jpg');
+    content: url("../img/carrousel3-low.jpg");
   }
-
   .carrousel-pequeño {
     display: flex;
     width: 150%;
@@ -228,3 +217,5 @@ body {
     display: none;
   }
 }
+
+/*# sourceMappingURL=estilos.css.map */
